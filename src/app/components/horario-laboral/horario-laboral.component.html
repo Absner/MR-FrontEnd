@@ -1,0 +1,38 @@
+<div class="row">
+  <div class="col-md-12">
+    <h3>Carga horario laboral del empleado </h3>
+  </div>
+
+  <div class="col-md-12 ">
+    <md-card>
+      <div class="row">
+        <div class="col-md-12 m-b-10 header-horario">
+          <md-select placeholder="Seleccione un Empleado" class="m-b-5 offset-md-1 col-md-4">
+            <md-option value="p" >Pedrito Pérez</md-option>
+          </md-select>
+        </div>
+      </div>
+      <div class="row body-content">
+        <div class="col-md-6">
+
+          <md-list  *ngFor='let item of workDay'>
+
+            <md-list-item>
+              <div class="col-md-1">
+                <md-checkbox>{{item.day}}</md-checkbox>
+              </div>
+              <div class="col-md-6 offset-md-5">
+                <ngb-timepicker [(ngModel)]="time" [spinners]="spinners"></ngb-timepicker>
+              </div>
+            </md-list-item>
+            <md-divider></md-divider>
+
+          </md-list>
+          
+        </div>
+      </div>
+
+    </md-card>
+  </div>
+
+</div>

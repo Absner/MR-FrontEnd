@@ -1,0 +1,42 @@
+<div class="container-fluid">
+  <div class="row">
+    <!--<md-toolbar color="primary">My App</md-toolbar>-->
+    <div class="lateral-menu">
+
+      <div class="lateral-menu-body">
+
+        <ul style="list-style-type: none;padding-left:0px;">
+          <li class="sidemenu-element" [routerLinkActive]="['active']" (click)="optionMenu('/dashboard/new-employee')">
+            <div class="row">
+              <div class="col-md-2"><i class="material-icons">keyboard_arrow_right</i></div>
+              <div class="col-md-10"><span>Nuevo empleado</span></div>
+            </div>
+          </li>
+          <li class="sidemenu-element">
+            <div class="row">
+              <div class="col-md-2"><i class="material-icons">keyboard_arrow_right</i></div>
+              <div class="col-md-8"><span>Nuevo empleado</span></div>
+            </div>
+          </li>
+          <li class="sidemenu-element"  (click)="optionMenu('/dashboard/working-hours')">
+            <div class="row">
+              <div class="col-md-2"><i class="material-icons">keyboard_arrow_right</i></div>
+              <div class="col-md-8"><span class="p-b-10">Horario laboral</span></div>
+            </div>
+            
+          </li>
+        </ul>
+
+      </div>
+
+    </div>
+
+    <div class="resto-pantalla">
+      <md-card>
+        <router-outlet></router-outlet>
+      </md-card>
+    </div>
+  </div>
+</div>
+
+

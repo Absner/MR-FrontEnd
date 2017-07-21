@@ -3,6 +3,12 @@
 body{
     margin: 0px !important;
 }
+.elipsis{
+  
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
 .text-center{
     text-align: center;
 }
@@ -10,4 +16,38 @@ body{
 /* Margins */
 .m-t-5{
     margin-top: 5px;
+}
+
+.m-b-5{
+    margin-bottom: 5px;
+}
+.m-b-10{
+    margin-bottom: 10px !important;
+}
+
+/* Padding */
+.p-b-10{
+    padding-bottom: 10px;
+}
+
+/*Estilo scroll */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color:#e2e2e2;
+  color: white!important;
+}
+
+::-webkit-scrollbar-track {
+  background-color: white;
+  color: white!important;
+}
+
+.social-icon {
+  color: #696969;
+  font-size: 24px!important;
+  cursor: pointer !important;
 }

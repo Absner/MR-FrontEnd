@@ -5,18 +5,28 @@ import { HttpModule } from '@angular/http';
 
 import { MaterialModule } from '@angular/material';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './components/login/login.component';
+import { DashboardComponent } from './components/dashboard/dashboard.component';
+import { HorarioLaboralComponent } from './components/horario-laboral/horario-laboral.component';
+import { NewEmployeeComponent } from './components/new-employee/new-employee.component';
 
 import 'hammerjs';
+
+
+
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    LoginComponent
+    LoginComponent,
+    DashboardComponent,
+    HorarioLaboralComponent,
+    NewEmployeeComponent
   ],
   imports: [
     BrowserModule,
@@ -24,7 +34,8 @@ import 'hammerjs';
     HttpModule,
     AppRoutingModule,
     MaterialModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    NgbModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
